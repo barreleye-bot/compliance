@@ -1,0 +1,29 @@
+[package]
+name = "barreleye-compliance"
+description = "Regulatory compliance tool for businesses dealing with digital assets."
+homepage = "https://barreleye.com"
+version = "0.0.1"
+license = "MPL-2.0"
+edition = "2021"
+readme = "README.md"
+repository = "https://github.com/barreleye/compliance"
+keywords = [ "barreleye", "regulatory", "compliance" ]
+
+[[bin]]
+name = "barreleye-compliance"
+path = "src/main.rs"
+
+[workspace]
+members = [ "common", "scan", "server" ]
+
+[dependencies]
+chrono = "0.4.22"
+log = "0.4.0"
+color-eyre = "0.6.2"
+eyre = "0.6.8"
+clap = { version = "4.0.9", features = [ "cargo" ] }
+fern = { version = "0.6.1", features = [ "chrono", "colored" ] }
+
+barreleye-common = { path = "./common" }
+barreleye-scan = { path = "./scan" }
+barreleye-server = { path = "./server" }

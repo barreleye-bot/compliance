@@ -1,0 +1,21 @@
+[package]
+name = "barreleye-common"
+version = "0.0.1"
+edition = "2021"
+workspace = ".."
+
+[dependencies]
+async-trait = "0.1.57"
+eyre = "0.6.8"
+sea-orm-migration = "0.9.3"
+chrono = "0.4.22"
+nanoid = "0.4.0"
+serde = "1.0.145"
+log = "0.4.17"
+
+[dependencies.sea-orm]
+version = "0.9.3"
+features = [
+  "sqlx-sqlite",
+  "runtime-tokio-native-tls",
+]

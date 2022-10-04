@@ -1,0 +1,22 @@
+[package]
+name = "barreleye-scan"
+version = "0.0.1"
+edition = "2021"
+workspace = ".."
+
+[dependencies]
+tokio = "1.21.1"
+log = "0.4.0"
+eyre = "0.6.8"
+color-eyre = "0.6.2"
+regex = "1.6.0"
+reqwest = "0.11.12"
+
+barreleye-common = { path = "../common" }
+
+[dependencies.sea-orm]
+version = "0.9.3"
+features = [
+  "sqlx-sqlite",
+  "runtime-tokio-native-tls"
+]

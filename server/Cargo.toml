@@ -1,0 +1,22 @@
+[package]
+name = "barreleye-server"
+version = "0.0.1"
+edition = "2021"
+workspace = ".."
+
+[dependencies]
+tokio = { version = "1.21.1", features = ["full"] }
+log = "0.4.0"
+eyre = "0.6.8"
+color-eyre = "0.6.2"
+axum = "0.6.0-rc.2"
+serde = "1.0.145"
+
+barreleye-common = { path = "../common" }
+
+[dependencies.sea-orm]
+version = "0.9.3"
+features = [
+  "sqlx-sqlite",
+  "runtime-tokio-native-tls"
+]
