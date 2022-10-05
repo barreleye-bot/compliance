@@ -16,7 +16,7 @@ This project, and everyone participating in it, are governed by the [Barreleye C
 
 ### Individual contribution
 
-You need to sign a Contributor License Agreement (CLA) to accept your pull request. You only need to do this once. If you submit a pull request for the first time, you can complete your CLA [here](https://cla.barreleye.com/barreleye/compliance), or our CLA bot will automatically ask you to sign before merging the pull request.
+You need to sign a Contributor License Agreement (CLA) to accept your pull request. You only need to do this once. If you submit a pull request for the first time, you can complete your CLA [here](https://cla-assistant.io/barreleye/compliance), or our CLA bot will automatically ask you to sign before merging the pull request.
 
 ### Company contribution
 
